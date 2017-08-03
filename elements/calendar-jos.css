@@ -1,0 +1,444 @@
+.uninstall_icon {
+    background: url(buttons.png) no-repeat 0% 75%;
+    border: none;
+    height: 42px;
+    width: 37px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100%;
+}
+
+.uninstall-banner .logo-title {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    width: 255px;
+    margin-left: 10px;
+    line-height: 22px;
+}
+
+.uninstall-banner {
+    background: #fff;
+    display: block;
+    height: 38px;
+}
+
+.goodbye-text {
+    font-size: 16px;
+    font-weight: bold;
+    background: #fff;
+    padding: 15px;
+    line-height: 22px;
+}
+
+
+/* The main calendar widget.  DIV containing a table. */
+
+div.calendar {
+  position: relative;
+  z-index: 100;
+  width: 226px;
+  margin-left: -100px;
+}
+
+.calendar, .calendar table {
+  border: 1px solid #cccccc;
+  font-size: 11px;
+  color: #000;
+  cursor: default;
+  background: #efefef;
+  font-family: arial,verdana,sans-serif;
+}
+
+#calendar_body .quick-edit-row .submit.inline-edit-save a {
+    float: left;
+    margin-right: 10px;
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.calendar .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;    /* They are the navigation buttons */
+  padding: 2px;          /* Make the buttons seem like they're pressing */
+  border:0px;
+  height:inherit;
+  display: table-cell !important;
+}
+.calendar .button {
+	
+	-webkit-border-radius: 11px !important;;
+ 	 border-radius: 11px !important;;
+	 text-shadow: white 0px 1px 0px;
+	 bbackground-origin: padding-box;
+		border-bottom-width: 1px;
+		border-left-width: 1px;
+		border-right-width: 1px;
+		border-top-width: 1px;
+		
+}
+
+.calendar thead .title { /* This holds the current "month, year" */
+  font-weight: bold;      /* Pressing it will take you to the current date */
+  text-align: center;
+  background: #333333;
+  color: #ffffff;
+  padding: 2px;
+}
+
+.calendar thead .headrow { /* Row <TR> containing navigation buttons */
+  background: #dedede;
+  color: #000;
+}
+
+.calendar thead .name { /* Cells <TD> containing the day names */
+  border-bottom: 1px solid #cccccc;
+  padding: 2px;
+  text-align: center;
+  color: #000;
+}
+
+.calendar thead .weekend { /* How a weekend day name shows in header */
+  color:#666666 !important;
+}
+
+.calendar thead .hilite { /* How do the buttons in header appear when hover */
+  background: #bbbbbb;
+  color: #000000;
+  border: 1px solid #cccccc;
+  padding: 1px;
+}
+
+.calendar thead .active { /* Active (pressed) buttons in header */
+  background: #c77;
+  padding: 2px 0px 0px 2px;
+}
+
+.calendar thead .daynames { /* Row <TR> containing the day names */
+  background: #dddddd;
+}
+
+/* The body part -- contains all the days in month. */
+
+.calendar tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  text-align: right;
+  padding: 2px 4px 2px 2px;
+}
+
+.calendar table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid #cccccc;
+  background: #dddddd;
+}
+
+.calendar tbody .rowhilite td {
+  background: #666666;
+  color: #ffffff;
+}
+
+.calendar tbody .rowhilite td.wn {
+  background: #666666;
+  color: #ffffff;
+}
+.calendar table
+{
+	border-collapse:inherit !important;
+}
+
+.calendar tbody td.hilite { /* Hovered cells <TD> */
+  background: #999999;
+  padding: 1px 3px 1px 1px;
+  border: 1px solid #666666;
+}
+
+.calendar tbody td.active { /* Active (pressed) cells <TD> */
+  background: #000000;
+  color: #ffffff;
+  padding: 2px 2px 0px 2px;
+}
+
+.calendar tbody td.selected { /* Cell showing today date */
+  font-weight: bold;
+  border: 1px solid #000;
+  padding: 1px 3px 1px 1px;
+  background: #000000;
+  color: #ffffff;
+}
+
+.calendar tbody td.weekend { /* Cells showing weekend days */
+  color: #cccccc;
+}
+
+.calendar tbody td.today { font-weight: bold; }
+
+.calendar tbody .disabled { color: #999; }
+
+.calendar tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.calendar tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.calendar tfoot .footrow { /* The <TR> in footer (only one right now) */
+  text-align: center;
+  background: #cccccc;
+  color: #000;
+}
+
+.calendar tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  border-top: 1px solid #cccccc;
+  background: #efefef;
+  color: #000000;
+}
+
+.calendar tfoot .hilite { /* Hover style for buttons in footer */
+  background: #666666;
+  border: 1px solid #f40;
+  padding: 1px;
+}
+
+.calendar tfoot .active { /* Active (pressed) style for buttons in footer */
+  background: #999999;
+  padding: 2px 0px 0px 2px;
+}
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.combo {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 4em;
+  cursor: default;
+  border: 1px solid #655;
+  background: #ffffff;
+  color: #000;
+  font-size: smaller;
+}
+
+.combo .label {
+  width: 100%;
+  text-align: center;
+}
+
+.combo .hilite {
+  background: #fc8;
+}
+
+.combo .active {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  background: #efefef;
+  font-weight: bold;
+  
+}
+
+.wp-picker-container input[type=text].color_input.wp-color-picker {
+    position: absolute;
+    left: 31px;
+	top: 0px;
+}
+
+/************* upgrade to pro ******************/
+
+.sp_calendar_upgrade{
+    clear: both;
+    padding: 15px;
+    background: #fff;
+    margin: 6px 15px 6px 0px;
+    color: #6e7990;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.sp_calendar_upgrade .wd-cell:first-child{
+    padding-right: 14px;
+}
+
+.sp_calendar_upgrade .wd-cell:last-child{
+    background: #45A6B7;
+}
+.sp_calendar_upgrade .wd-cell:last-child a{
+    color: #fff !important;
+    padding: 18px;
+} 
+
+
+.sp_calendar_upgrade .wd-cell:first-child{
+    background: transparent
+}
+.sp_calendar_upgrade .wd-cell:first-child img{
+    vertical-align:middle;
+}
+.sp_calendar_upgrade .wd-cell:first-child a{
+   color: #72777c !important;
+}  
+.sp_calendar_upgrade a, .sp_calendar_upgrade a:hover {
+    text-decoration: none !important;
+}
+
+/* general styles */
+
+.wd-cell{
+	display:table-cell;
+}
+.wd-cell-valign-middle{
+	vertical-align:middle;
+}
+.wd-cell-valign-top{
+	vertical-align:top;
+}
+.wd-cell-valign-bottom{
+	vertical-align:bottom;
+}
+.wd-table{
+	display:table;
+}
+.wd-text-right{
+	text-align:right;
+}
+.wd-text-left{
+	text-align:left;
+}
+.wd-text-center{
+	text-align:center;
+}
+.wd-left{
+	float:left;
+}
+.wd-right{
+	float:right;
+}
+.wd-clear:after{
+	clear:both;
+	content:"";
+	display:table;
+}
+.wd-row{
+	margin-bottom:15px;
+}
+
+a:focus{
+	box-shadow: none;
+}
+
+/************* front end ************/
+
+
+#TB_iframeContent{
+	width: 100%;
+	height: inherit !important;
+}
+#TB_window{
+	z-index: 1000000 !important;
+	color: #dfdfdf;
+	top: 100px !important;
+}
+#TB_title{
+	border-bottom: none;
+	height: 0px;
+}
+
+#TB_closeWindowButton,
+.tb-close-icon,
+#TB_closeWindowButton:focus .tb-close-icon{
+	outline:0 !important;
+	box-shadow: 0 0;
+}
+
+.tb-close-icon{
+	left: -17px;
+	top: 11px;
+}
+
+.tb-close-icon:before{
+	content: 'x';
+	font-weight: 300;
+	font-family: monospace;
+}
+
+.screen-reader-text,
+#views_select .arrow-down,
+#views_select .arrow-right{
+	display: none;
+}
+
+html.thickbox_open{
+	overflow: hidden;
+}
+#TB_window iframe{
+	margin-left: 0;
+	margin-top: 0;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+.show_arrow{
+	display: inline-block !important;
+}
+
+.ios_device #TB_window { 
+	height: 90%; 
+	-webkit-overflow-scrolling: touch !important; 
+	overflow: scroll !important; 
+} 
+
+.general_table a,
+.last_table a,
+.week_list a,
+.day_ev a{
+	border: 0;
+	text-decoration: none;
+	box-shadow: 0 0;
+}
+
+
+.wdc_calendar{
+	display: block !important;
+	max-width: 100% !important;
+	border: 0;
+	text-decoration: none;
+	box-shadow: 0 0;
+}
+
+.wdc_calendar li{
+	list-style: none;
+}
+.wdc_calendar p{
+	margin: 0;
+	padding: 0;
+}
+
+.wdc_calendar table{
+	table-layout: auto;
+}
+
+@media screen and (max-width: 768px) {
+	.wdc_calendar #cal_event p:not(.ev_name){
+		 display: block; /* Fallback for non-webkit */
+		 display: -webkit-box;
+		 max-width: 400px;
+		 height: 32px; /* Fallback for non-webkit */
+		 margin: 0 auto;
+		 font-size: 13px;
+		 line-height: 15px;
+		 -webkit-line-clamp: 2;
+		 -webkit-box-orient: vertical;
+		 overflow: hidden;
+		 text-overflow: ellipsis;
+	}
+	div.wdc_calendar{
+		width: 100% !important;
+		margin: 0;
+	}
+	.wdc_calendar .cala_day{
+		max-width: 37px;
+	}
+}
